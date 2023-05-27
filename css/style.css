@@ -3943,19 +3943,10 @@ label,
   border-color: #027BFE;
 }
 
-.profile-box .carousel-inner {
-  height: 406px;
-}
-
 .profile-box .d-block {
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
-
-.profile-box .carousel-control-prev,
-.profile-box .carousel-control-next {
-  padding: 0 0 107px;
 }
 
 .profile-box .carousel {
@@ -4357,4 +4348,10 @@ label,
   font-size: 18px;
   line-height: 23px;
   font-family: "Segoe UI Bold";
+}
+
+@media all and (max-width:350px) {
+  .profile-box .profile-box-content {
+    padding: 0 10px;
+  }
 }
