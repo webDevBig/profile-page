@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Like</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB ESSENTIAL -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- MDB PLUGINS -->
+    <link rel="stylesheet" href="plugins/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/segoe/style.css" />
+
+</head>
+
+<body style="max-width: 450px; margin: 0 auto; overflow-x: hidden;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-cus-blue">
+            <div class="container">
+                <div class="d-flex  align-items-center">
+                    <a class="navbar-brand" href="#"><img class="p-2" src="img/logo.png" alt="195" /></a>
+                    <span class="sub-directory">/ profile</span>
+                </div>
+
+
+                <div class="d-flex">
+                    <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="profile-dashboard.html"
+                        id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="" aria-expanded="false">
+                        <img src="img/profile.png" class="profile-icon-sm mx-2" height="36" loading="lazy" />
+                    </a>
+
+                    <!-- Dropdown menu  -->
+                    <div class="dropdown">
+                        <button class="btn shadow-none px-2" type="button" id="dropdownMenuButton"
+                            data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v text-white"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="settings-free.html">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Subscription</a></li>
+                            <li>
+                                <a class="dropdown-item" href="profile-transaction.html">Transactions</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Call History</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container-wrapper">
+        <div class="profile-box">
+            <!-- Carousel wrapper -->
+            <div id="myCarousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+                <button class="like-btn" id="like-btn"><i class="fas fa-heart"></i></button>
+               
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <p class="num">1/5</p>
+                    <div class="carousel-item active">
+                        <img src="img/photo1.png" class="d-block" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/photo2.png" class="d-block" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/photo3.png" class="d-block" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/photo4.png" class="d-block" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/photo5.png" class="d-block" alt="..." />
+                    </div>
+                </div>
+                <!-- Slides -->
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-mdb-target="#myCarousel" data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-mdb-target="#myCarousel" data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <!-- Controls -->
+
+                <!-- Thumbnails -->
+                <div class="carousel-indicators">
+                    <button type="button" data-mdb-target="#myCarousel" data-mdb-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1">
+                        <img class="d-block" src="img/photo1.png" class="img-fluid" />
+                    </button>
+                    <button type="button" data-mdb-target="#myCarousel" data-mdb-slide-to="1" aria-label="Slide 2">
+                        <img class="d-block" src="img/photo2.png" class="img-fluid" />
+                    </button>
+                    <button type="button" data-mdb-target="#myCarousel" data-mdb-slide-to="2" aria-label="Slide 3">
+                        <img class="d-block" src="img/photo3.png" class="img-fluid" />
+                    </button>
+                    <button type="button" data-mdb-target="#myCarousel" data-mdb-slide-to="3" aria-label="Slide 4">
+                        <img class="d-block" src="img/photo4.png" class="img-fluid" />
+                    </button>
+                    <button type="button" data-mdb-target="#myCarousel" data-mdb-slide-to="4" aria-label="Slide 5">
+                        <img class="d-block" src="img/photo5.png" class="img-fluid" />
+                    </button>
+                </div>
+                <!-- Thumbnails -->
+            </div>
+            <!-- Carousel wrapper -->
+            <div class="profile-box-content">
+                <div class="profile-info">
+                    <div class="profile-row">
+                        <p class="profile-name">Yordanka, <span class="age">23</span></p>
+                        <img alt="" src="img/verification.png" />
+                        <div class="report">
+                            <img alt="" src="img/report_img.png" />
+                            <p>Report user</p>
+                        </div>
+                    </div>
+                    <p class="profile-location"><i class="fas fa-location-dot"></i>Sofia</p>
+                    <div class="profile-tags-box">
+                        <div class="profile-tag">First</div>
+                        <div class="profile-tag">Second</div>
+                    </div>
+
+                </div>
+                <div class="btn-box">
+                    <button type="button" class="btn bg-cus-blue">
+                        Book NOW
+                    </button>
+                    <button type="button" class="btn bg-cus-green"> <i class="chat-icon"></i>
+                        Chat
+                    </button>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu urna nec mauris
+                    interdum
+                    sollicitudin et vel dui. Sed enim mi, euismod eget odio vel, sagittis molestie est. Aliquam ut
+                    auctor
+                    mi. Curabitur risus nisi, fermentum id ex fringilla, rutrum mollis nulla.</p>
+                <h3>Contact</h3>
+                <button type="button" class="btn bg-secondary phone-number">
+                    +43 532 253 23
+                </button>
+                <div class="box">
+                    <div class="clm">
+                        <p class="box-title">ItemA</p>
+                        <p class="row-text">Service1 <span>100€</span></p>
+                        <p class="row-text">Service2 <span>100€</span></p>
+                    </div>
+                    <div class="clm">
+                        <p class="box-title">ItemB</p>
+                        <p class="row-text">Service3 <span>100€</span></p>
+                        <p class="row-text">Service4 <span>100€</span></p>
+                    </div>
+                </div>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h3>Specifications</h3>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-mdb-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <table class="table table-striped table-borderless">
+                                    <tr>
+                                        <th>Ethnic</th>
+                                        <th class="bold">Bulgarian</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Orientation</th>
+                                        <th class="bold">Bisexual</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Height</th>
+                                        <th class="bold">170 cm</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Weight</th>
+                                        <th class="bold">53 kg</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Cup</th>
+                                        <th class="bold">D</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Haircut</th>
+                                        <th class="bold">Natural</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Languages</th>
+                                        <th class="bold">En, Bg, Pl</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h3>Services</h3>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-mdb-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="accordion-body">
+                                    <p class="accordion-title"><i class="item-icon"></i> Item1</p>
+                                    <table class="table table-striped table-borderless">
+                                        <tr>
+                                            <th>Subitem 1</th>
+                                            <th>-</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Subitem 2</th>
+                                            <th>-</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Subitem 3</th>
+                                            <th>+50€ extra
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Subitem 4</th>
+                                            <th>-</th>
+                                        </tr>
+                                    </table>
+                                    <p class="accordion-title"><i class="item-icon"></i> Item2</p>
+                                    <table class="table table-striped table-borderless">
+                                        <tr>
+                                            <th>Subitem 1</th>
+                                            <th>-</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Subitem 2</th>
+                                            <th>-</th>
+                                        </tr>
+                                        <tr>
+                                            <th>Subitem 3</th>
+                                            <th>+50€ extra
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Subitem 4</th>
+                                            <th>-</th>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                                data-mdb-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h3>Availability </h3>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-mdb-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="accordion-body">
+                                    <div class="availability-items-box">
+                                        <div class="availability-item blue">
+                                            <p class="day">Mo</p>
+                                            <p class="hour">13h30-23h30</p>
+                                        </div>
+                                        <div class="availability-item blue">
+                                            <p class="day">Tu</p>
+                                            <p class="hour">2pm-23pm</p>
+                                        </div>
+                                        <div class="availability-item gray">
+                                            <p class="day">We</p>
+                                            <p class="hour">-</p>
+                                        </div>
+                                        <div class="availability-item blue">
+                                            <p class="day">Thursday</p>
+                                            <p class="hour">2pm-23pm</p>
+                                        </div>
+                                        <div class="availability-item blue">
+                                            <p class="day">Fr</p>
+                                            <p class="hour">2pm-23pm</p>
+                                        </div>
+                                        <div class="availability-item green">
+                                            <p class="day">Sa</p>
+                                            <p class="hour">2pm-23pm</p>
+                                        </div>
+                                        <div class="availability-item green">
+                                            <p class="day">Sunday</p>
+                                            <p class="hour">-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-cus-blue setting-preferences" style="margin: 0 auto; max-width: 450px;">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col footer-tab text-center">
+                        <a href="index-with-data.html">
+                            <i class="fas fa-home"></i>
+                            <p>Home</p>
+                        </a>
+                    </div>
+                    <div class="col footer-tab text-center">
+                        <a href="chat-overview.html">
+                            <i class="far fa-comment-dots"></i>
+                            <span class="badge rounded-pill badge-notification bg-white">9</span>
+                            <p>Chat</p>
+                        </a>
+                    </div>
+                    <div class="col footer-tab text-center">
+                        <a href="booking-actions.html">
+                            <i class="far fa-bookmark"></i>
+                            <span class="badge rounded-pill badge-notification bg-white">134</span>
+                            <p>Bookings</p>
+                        </a>
+                    </div>
+                    <div class="col footer-tab text-center">
+                        <a href="profile-dashboard.html">
+                            <i class="far fa-user"></i>
+                            <p>Profile</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- Custom scripts -->
+    <script type="text/javascript">
+        // like-btn
+        var like_btn = document.getElementById("like-btn");
+        like_btn.addEventListener('click', () => {
+            like_btn.classList.toggle("active")
+        });
+
+        document.getElementById('myCarousel').addEventListener('slid.bs.carousel', function () {
+            var totalItems = document.querySelectorAll('#myCarousel .carousel-item').length;
+            var currentIndex = Array.from(document.querySelectorAll('#myCarousel .carousel-item')).indexOf(
+                document.querySelector('#myCarousel .carousel-item.active')) + 1;
+            document.querySelectorAll('.num').forEach(function (element) {
+                element.innerHTML = currentIndex + '/' + totalItems;
+            });
+        });
+    </script>
+</body>
+
+</html>
