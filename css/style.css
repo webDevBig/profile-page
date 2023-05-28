@@ -3924,7 +3924,7 @@ label,
   margin-bottom: 0;
 }
 
-.profile-box .carousel-indicators [data-mdb-target]  {
+.profile-box .carousel-indicators [data-mdb-target] {
   width: 87px;
   height: 87px;
   border-radius: 0;
@@ -3937,12 +3937,14 @@ label,
   height: 100%;
   object-fit: cover;
 }
+
 .profile-box .carousel-indicators .multi-carousel-item {
   border-radius: 0;
   background-color: transparent;
   border: 2px solid transparent;
   padding: 0;
 }
+
 .profile-box .carousel-indicators .multi-carousel-item.active {
   background-color: transparent;
   border-color: #027BFE;
@@ -4363,8 +4365,39 @@ label,
   font-family: "Segoe UI Bold";
 }
 
+@media all and (max-width:425px) {
+
+  .profile-box .carousel-inner,
+  .profile-box .main-control {
+    height: 400px;
+  }
+}
+
+@media all and (max-width:375px) {
+
+  .profile-box .carousel-inner,
+  .profile-box .main-control {
+    height: 350px;
+  }
+}
+
+@media all and (max-width:360px) {
+
+  .profile-box .carousel-inner,
+  .profile-box .main-control {
+    height: 340px;
+  }
+}
+
 @media all and (max-width:350px) {
   .profile-box .profile-box-content {
     padding: 0 10px;
+  }
+}
+
+@media all and (max-width:340px) {
+  .profile-box .carousel-inner,
+  .profile-box .main-control {
+    height: 300px;
   }
 }
