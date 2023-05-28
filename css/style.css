@@ -3924,7 +3924,7 @@ label,
   margin-bottom: 0;
 }
 
-.profile-box .carousel-indicators [data-mdb-target] {
+.profile-box .carousel-indicators [data-mdb-target]  {
   width: 87px;
   height: 87px;
   border-radius: 0;
@@ -3937,8 +3937,13 @@ label,
   height: 100%;
   object-fit: cover;
 }
-
-.profile-box .carousel-indicators button.active {
+.profile-box .carousel-indicators .multi-carousel-item {
+  border-radius: 0;
+  background-color: transparent;
+  border: 2px solid transparent;
+  padding: 0;
+}
+.profile-box .carousel-indicators .multi-carousel-item.active {
   background-color: transparent;
   border-color: #027BFE;
 }
@@ -3953,6 +3958,14 @@ label,
   position: relative;
   height: auto;
   overflow: inherit;
+}
+
+.profile-box .carousel-inner {
+  height: 420px;
+}
+
+.profile-box .main-control {
+  height: 420px;
 }
 
 .profile-box .like-btn {
