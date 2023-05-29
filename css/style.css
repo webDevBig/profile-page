@@ -3950,25 +3950,25 @@ label,
   border-color: #027BFE;
 } */
 
-.profile-box .d-block {
+/* .profile-box .d-block {
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
+} */
 
-.profile-box .carousel {
+/* .profile-box .carousel {
   position: relative;
   height: auto;
   overflow: inherit;
-}
+} */
 
-.profile-box .carousel-inner {
+/* .profile-box .carousel-inner {
   height: 420px;
-}
+} */
 
-.profile-box .main-control {
+/* .profile-box .main-control {
   height: 420px;
-}
+} */
 
 .profile-box .like-btn {
   border-radius: 50%;
@@ -4401,7 +4401,9 @@ label,
 .splide__arrow {
   background-color: transparent;
 }
-
+.splide__track{
+  position: relative;
+}
 
 
 

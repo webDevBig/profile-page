@@ -68,6 +68,8 @@
         <div class="profile-box">
             <section id="main-carousel" class="splide" aria-label="Beautiful Images">
                 <div class="splide__track">
+                    <button class="like-btn" id="like-btn"><i class="fas fa-heart"></i></button>
+                    <p class="num"></p>
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <img src="img/photo1.png" alt="">
@@ -467,15 +469,15 @@
     <!-- Custom scripts -->
     <script type="text/javascript">
         // like-btn
-        // var like_btn = document.getElementById("like-btn");
-        // like_btn.addEventListener('click', () => {
-        //     like_btn.classList.toggle("active")
-        // });
+        var like_btn = document.getElementById("like-btn");
+        like_btn.addEventListener('click', () => {
+            like_btn.classList.toggle("active")
+        });
 
-        // document.getElementById('myCarousel').addEventListener('slid.bs.carousel', function () {
-        //     var totalItems = document.querySelectorAll('#myCarousel .carousel-item').length;
-        //     var currentIndex = Array.from(document.querySelectorAll('#myCarousel .carousel-item')).indexOf(
-        //         document.querySelector('#myCarousel .carousel-item.active')) + 1;
+        // document.getElementById('main-carousel').addEventListener('slid.bs.carousel', function () {
+        //     var totalItems = document.querySelectorAll('#main-carousel .splide__slide').length;
+        //     var currentIndex = Array.from(document.querySelectorAll('#main-carousel .splide__slide')).indexOf(
+        //         document.querySelector('#myCarousel .splide__slide.is-active')) + 1;
         //     document.querySelectorAll('.num').forEach(function (element) {
         //         element.innerHTML = currentIndex + '/' + totalItems;
         //     });
@@ -506,6 +508,16 @@
             main.sync(thumbnails);
             main.mount();
             thumbnails.mount();
+            var totalItems = document.querySelectorAll('#main-carousel .splide__slide').length;
+                document.querySelectorAll('.num').forEach(function (element) {
+                    element.innerHTML = 1 + '/' + totalItems;
+                });
+            main.on('moved', function (newIndex) {
+                var totalItems = document.querySelectorAll('#main-carousel .splide__slide').length;
+                document.querySelectorAll('.num').forEach(function (element) {
+                    element.innerHTML = (newIndex + 1 ) + '/' + totalItems;
+                });
+            });
         });
     </script>
 </body>
