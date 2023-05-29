@@ -101,6 +101,9 @@
                         <li class="splide__slide">
                             <img src="img/photo5.png" alt="">
                         </li>
+                        <li class="splide__slide">
+                            <img src="img/photo5.png" alt="">
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -133,6 +136,9 @@
                         </li>
                         <li class="splide__slide">
                             <img src="img/photo4.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/photo5.png" alt="">
                         </li>
                         <li class="splide__slide">
                             <img src="img/photo5.png" alt="">
@@ -487,19 +493,15 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var main = new Splide('#main-carousel', {
-                type: 'fade',
-                // rewind: true,
+                type: 'loop',
                 pagination: false,
                 arrows: true,
             });
 
-
             var thumbnails = new Splide('#thumbnail-carousel', {
-                // type: 'loop',
                 fixedWidth: 87,
                 fixedHeight: 87,
                 gap: 7,
-                // rewind: true,
                 pagination: false,
                 isNavigation: true,
             });
@@ -510,12 +512,12 @@
             thumbnails.mount();
             var totalItems = document.querySelectorAll('#main-carousel .splide__slide').length;
                 document.querySelectorAll('.num').forEach(function (element) {
-                    element.innerHTML = 1 + '/' + totalItems;
+                    element.innerHTML = 1 + '/' + (totalItems - 4);
                 });
             main.on('moved', function (newIndex) {
-                var totalItems = document.querySelectorAll('#main-carousel .splide__slide').length;
+                // var totalItems = document.querySelectorAll('#main-carousel .splide__slide').length;
                 document.querySelectorAll('.num').forEach(function (element) {
-                    element.innerHTML = (newIndex + 1 ) + '/' + totalItems;
+                    element.innerHTML = (newIndex + 1 ) + '/' + (totalItems - 4);
                 });
             });
         });
